@@ -7,21 +7,26 @@
   --darkgreen: #24532f;
   --grey: #f0f0f0;
   --radius: 8px;
+  --yellow: hsl(47, 88%, 63%);
 }
 
 body {
-    background: var(--grey);
+    background: var(--yellow);
     color: var(--black);
     display: flex;
     justify-content: center;
     min-height: 100vh;
-    font-family: "DM Mono", monospace;
+    font-family: 'Figtree';
     text-align: center;
 }
 
 .container {
     width: 400px;
     padding: 20px 0 50px 0;
+    background-color: white;
+    border: 1px solid; 
+    border-radius: 1rem;
+    box-shadow: 10px 10px black;
 }
 
 section {
