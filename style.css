@@ -68,6 +68,7 @@ input {
 .radio-group label {
     display: inline-block;
     position: relative;
+    margin-top: 20px;
     cursor: pointer;
 } 
 
