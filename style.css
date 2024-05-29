@@ -8,3 +8,101 @@
   --grey: #f0f0f0;
   --radius: 8px;
 }
+
+body {
+    background: var(--grey);
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: "DM Mono", monospace;
+    text-align: center;
+}
+
+.container {
+    width: 400px;
+    padding: 20px 0 50px 0;
+}
+
+section {
+    margin: 20px 0 50px;
+}
+
+input {
+    width: 90%;
+    height: 2em;
+    font-size: 2em;
+    box-sizing: border-box;
+    text-align: end;
+    outline: none;
+    background: var(--white);
+    padding: 5px;
+    border-radius: var(--radius);
+    border: 2px solid var(--darkgrey);
+}
+
+.radio-group input[type="radio"] {
+    display: none;
+}
+
+.radio-group {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.radio-group label::before {
+    text-align: center;
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    border: 2px solid var(--darkgrey);
+    border-radius: var(--radius);
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.radio-group label {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+} 
+
+.radio-group label span {
+    position: absolute;
+    left: 20px;
+    top: -10px;
+} 
+
+.radio-group input[type="radio"]:checked + label::before {
+    background-color: var(--green);
+}
+
+.calculate-btn {
+    background: var(--darkgreen);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 15px 30px;
+    font-size: 2em;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 50px 0;
+}
+
+h2 {
+    margin: 0 0 20px;
+}
+
+section {
+    margin: 20px 0 50px;
+}
+
+.final-bill p {
+    font-size: 1.5em;
+}
