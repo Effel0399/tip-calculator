@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+:root {
+  --black: #2c2626;
+  --darkgrey: #6a5959;
+  --white: #ffffff;
+  --green: #80ed99;
+  --darkgreen: #24532f;
+  --grey: #f0f0f0;
+  --radius: 8px;
+}
