@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Tip Calculator</h1>
+        <form action="">
+          <section class="total-bill">
+            <h2>Total bill amount</h2>
+            <input type="numbrt" placeholder="0.00" id="amount" value="" required />
+          </section>
+          <section class="select-tip">
+            <h2>Choose Tip</h2>
+            <div class="radio-group">
+              <input type="radio" id="5" name="percentage" value="5" />
+              <label for="5">
+                <span> 5%</span>
+              </label>
+              <input type="radio" id="10" name="percentage" value="10" checked />
+              <label for="10">
+                <span> 10%</span>
+              </label>
+              <input type="radio" id="15" name="percentage" value="15" />
+              <label for="15">
+                <span>15%</span>
+              </label>
+              <input type="radio" id="20" name="percentage" value="20" />
+              <label for="20">
+                <span>20%</span>
+              </label>
+            </div>
+          </section>
+          <section class="people">
+            <h2>Number of People sharing</h2>
+            <input type="number" placeholder="1" value="2" id="people" required />
+          </section>
+          <section class="submit-form">
+            <button class="calculate-btn">Calculate</button>
+            <div class="final-bill">
+              <p id="tip">Tip Per Person: $0</p>
+          </section>
+        </form>
+      </div>
+</body>
+</html>
